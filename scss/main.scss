@@ -1,0 +1,916 @@
+        @import "./_global";
+        @import "./_variabel";
+        // Extra Small Device
+        // Navbar All Devices
+        .overlay {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-y: hidden;
+            transition: 0.5s;
+        }
+        
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+        
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .logo-hmj {
+                width: 100px;
+                height: 150px;
+            }
+            .overlay {
+                overflow-y: auto;
+            }
+            .overlay a {
+                font-size: 20px
+            }
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+        
+        // X-Small devices (portrait phones, less than 576px)
+        .nav-item {
+            font-size: 0.8em;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 35px;
+        }
+        
+        .carousel-item img {
+            height: 500px;
+        }
+        
+        .container {
+            position: relative;
+            .carousel-caption {
+                position: absolute;
+                text-align: center;
+                padding-bottom: 10%;
+                right: 10%;
+                left: 10%;
+            }
+            h1 {
+                color: $white;
+                font-size: 1.1em;
+                letter-spacing: 0.02em;
+                font-weight: 600;
+            }
+            p {
+                font-size: 0.9em;
+                color: $white;
+                letter-spacing: 0.05em;
+                margin-top: 0.5em;
+            }
+            .btn- {
+                border: 2px solid $white;
+                border-radius: 2px;
+                color: $white;
+                padding: 0.6em 1em;
+                font-size: 0.6em;
+                margin-top: 0.3em;
+            }
+            .btn-:hover {
+                background-color: white;
+                color: #000;
+            }
+        }
+        
+        // Section 2
+        #hero-2 {
+            margin-top: 2em;
+            .img-hero2 img {
+                width: 300px;
+                height: auto;
+            }
+        }
+        
+        .hero-2-content {
+            margin-top: 1em;
+            h3 {
+                font-size: 1.5em;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+                color: $black;
+                span {
+                    color: $blue;
+                }
+            }
+            p {
+                margin-top: 1em;
+                font-size: 0.8em;
+                color: $secondary-text;
+                letter-spacing: 0.05em;
+            }
+            .baca-selengkapnya {
+                cursor: pointer;
+                color: $blue;
+                letter-spacing: 0.05em;
+                text-decoration-line: underline;
+                margin-top: 1.5em;
+            }
+            .baca-selengkapnya:hover {
+                text-decoration: none;
+            }
+        } // Section 3
+        #hero3 {
+            margin-top: 2em;
+        }
+        
+        .icon {
+            width: 2em;
+        }
+        
+        .goals {
+            width: 130px;
+        }
+        
+        .title {
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 1.5em;
+            h3 {
+                font-size: 1.5em;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+                color: $black;
+                span {
+                    color: $blue;
+                }
+            }
+        }
+        
+        .box-shadow {
+            border-radius: 5px;
+            background-color: $white;
+            border: 1px solid rgba(189, 169, 169, 0.1);
+            .text-content {
+                h5 {
+                    font-size: 1.1em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                }
+                p {
+                    color: $black;
+                    letter-spacing: 0.05em;
+                    font-size: 0.8em;
+                }
+            }
+        }
+        
+        .box-shadow:hover {
+            box-shadow: 0px -8px 80px rgba(146, 141, 141, 0.13), 0px -1.7869px 17.869px rgba(146, 141, 141, 0.0774939), 0px -0.532008px 5.32008px rgba(146, 141, 141, 0.0525061);
+        }
+        
+        .box-shadow-2 {
+            border-radius: 5px;
+            background-color: $white;
+            border: 1px solid rgba(189, 169, 169, 0.1);
+            .text-content {
+                h5 {
+                    font-size: 1.1em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                }
+                p {
+                    font-size: 0.8em;
+                    color: $black;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+        
+        .box-shadow-2:hover {
+            box-shadow: 0px -8px 80px rgba(146, 141, 141, 0.13), 0px -1.7869px 17.869px rgba(146, 141, 141, 0.0774939), 0px -0.532008px 5.32008px rgba(146, 141, 141, 0.0525061);
+        }
+        
+        // Mobile
+        @media (min-width: 576px) {
+            .navbar-nav {
+                background: #333;
+            }
+            .nav-item {
+                font-size: 1em;
+            }
+            .logo {
+                width: 120px;
+                height: 35px;
+            }
+            .carousel-item img {
+                height: 500px;
+            }
+            .container {
+                position: relative;
+                .carousel-caption {
+                    position: absolute;
+                    text-align: center;
+                    right: 10%;
+                    left: 10%;
+                    padding-bottom: 15%;
+                }
+                h1 {
+                    color: $white;
+                    font-size: 1.1em;
+                    letter-spacing: 0.02em;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 1em;
+                    color: $white;
+                    letter-spacing: 0.05em;
+                    margin-top: 1em;
+                }
+                .btn- {
+                    border: 3px solid $white;
+                    border-radius: 3px;
+                    color: $white;
+                    padding: 0.6em 1em;
+                    font-size: 0.7em;
+                    margin-top: 0.5em;
+                }
+                .btn-:hover {
+                    background-color: white;
+                    color: #000;
+                }
+            }
+            // Section 2
+            #hero-2 {
+                margin-top: 3em;
+                .img-hero2 img {
+                    width: 380px;
+                    height: auto;
+                }
+            }
+            .hero-2-content {
+                margin-top: 1em;
+                h3 {
+                    font-size: 2.2em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    span {
+                        color: $blue;
+                    }
+                }
+                p {
+                    margin-top: 1em;
+                    font-size: 1em;
+                    color: $secondary-text;
+                    letter-spacing: 0.05em;
+                }
+                .baca-selengkapnya {
+                    cursor: pointer;
+                    color: $blue;
+                    letter-spacing: 0.05em;
+                    text-decoration-line: underline;
+                    margin-top: 1.5em;
+                }
+                .baca-selengkapnya:hover {
+                    text-decoration: none;
+                }
+            } // Section 3
+            .icon {
+                width: 3.5em;
+            }
+            .goals {
+                width: 180px;
+            }
+            .title {
+                text-align: center;
+                h3 {
+                    font-size: 2.2em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    span {
+                        color: $blue;
+                    }
+                }
+            }
+            .box-shadow {
+                border-radius: 5px;
+                background-color: $white;
+                border: 1px solid rgba(189, 169, 169, 0.1);
+                .text-content {
+                    h5 {
+                        font-weight: 600;
+                        letter-spacing: 0.02em;
+                    }
+                    p {
+                        color: $black;
+                        letter-spacing: 0.05em
+                    }
+                }
+            }
+            .box-shadow:hover {
+                box-shadow: 0px -8px 80px rgba(146, 141, 141, 0.13), 0px -1.7869px 17.869px rgba(146, 141, 141, 0.0774939), 0px -0.532008px 5.32008px rgba(146, 141, 141, 0.0525061);
+            }
+            .box-shadow-2 {
+                border-radius: 5px;
+                background-color: $white;
+                border: 1px solid rgba(189, 169, 169, 0.1);
+                .text-content {
+                    h5 {
+                        font-weight: 600;
+                        letter-spacing: 0.02em;
+                    }
+                    p {
+                        color: $black;
+                        letter-spacing: 0.05em;
+                    }
+                }
+            }
+            .box-shadow-2:hover {
+                box-shadow: 0px -8px 80px rgba(146, 141, 141, 0.13), 0px -1.7869px 17.869px rgba(146, 141, 141, 0.0774939), 0px -0.532008px 5.32008px rgba(146, 141, 141, 0.0525061);
+            }
+        }
+        
+        // Ipad
+        @media (min-width: 768px) {
+            .navbar-nav {
+                background-color: $black;
+            }
+            .nav-item {
+                font-size: 1em;
+            }
+            .logo {
+                width: 120px;
+                height: 35px;
+            }
+            .carousel-item img {
+                height: 500px;
+            }
+            .container {
+                position: relative;
+                .carousel-caption {
+                    position: absolute;
+                    text-align: center;
+                    right: 10%;
+                    left: 10%;
+                    padding-bottom: 10%;
+                }
+                h1 {
+                    color: $white;
+                    font-size: 1.3em;
+                    letter-spacing: 0.02em;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 1em;
+                    color: $white;
+                    letter-spacing: 0.05em;
+                    margin-top: 1em;
+                }
+                .btn- {
+                    border: 3px solid $white;
+                    border-radius: 3px;
+                    color: $white;
+                    padding: 0.6em 1em;
+                    font-size: 0.8em;
+                    margin-top: 0.5em;
+                }
+                .btn-:hover {
+                    background-color: white;
+                    color: #000;
+                }
+            } // Section 2
+            #hero-2 {
+                margin-top: 3em;
+                .img-hero2 img {
+                    width: 380px;
+                    height: auto;
+                }
+            }
+            .hero-2-content {
+                margin-top: 1em;
+                h3 {
+                    font-size: 2.2em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    span {
+                        color: $blue;
+                    }
+                }
+                p {
+                    margin-top: 1em;
+                    font-size: 0.7em;
+                    color: $secondary-text;
+                    letter-spacing: 0.05em;
+                }
+                .baca-selengkapnya {
+                    cursor: pointer;
+                    color: $blue;
+                    letter-spacing: 0.05em;
+                    text-decoration-line: underline;
+                    margin-top: 1.5em;
+                }
+                .baca-selengkapnya:hover {
+                    text-decoration: none;
+                }
+            }
+            // Section 3
+            .icon {
+                width: 3.5em;
+            }
+            .goals {
+                width: 290px;
+            }
+            .title {
+                text-align: center;
+                h3 {
+                    font-size: 2.2em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    span {
+                        color: $blue;
+                    }
+                }
+            }
+            .box-shadow {
+                border-radius: 5px;
+                background-color: $white;
+                border: 1px solid rgba(189, 169, 169, 0.1);
+                .text-content {
+                    h5 {
+                        font-weight: 600;
+                        letter-spacing: 0.02em;
+                        font-size: 1.3em;
+                    }
+                    p {
+                        color: $black;
+                        letter-spacing: 0.05em;
+                        font-size: 1em;
+                    }
+                }
+            }
+            .box-shadow:hover {
+                box-shadow: 0px -8px 80px rgba(146, 141, 141, 0.13), 0px -1.7869px 17.869px rgba(146, 141, 141, 0.0774939), 0px -0.532008px 5.32008px rgba(146, 141, 141, 0.0525061);
+            }
+            .box-shadow-2 {
+                border-radius: 5px;
+                background-color: $white;
+                border: 1px solid rgba(189, 169, 169, 0.1);
+                .text-content {
+                    h5 {
+                        font-weight: 600;
+                        letter-spacing: 0.02em;
+                        font-size: 1.3em;
+                    }
+                    p {
+                        color: $black;
+                        letter-spacing: 0.05em;
+                        font-size: 1em;
+                    }
+                }
+            }
+            .box-shadow-2:hover {
+                box-shadow: 0px -8px 80px rgba(146, 141, 141, 0.13), 0px -1.7869px 17.869px rgba(146, 141, 141, 0.0774939), 0px -0.532008px 5.32008px rgba(146, 141, 141, 0.0525061);
+            }
+        }
+        
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            .navbar-nav {
+                background-color: transparent;
+                height: 2.5em !important;
+            }
+            .logo {
+                width: 160px;
+                height: 120px;
+            }
+            .nav-item {
+                font-size: 1em;
+            }
+            // Carousel
+            .carousel-item img {
+                margin: auto;
+                width: 100%;
+                height: auto;
+            }
+            .container {
+                position: relative;
+                .carousel-caption {
+                    position: absolute;
+                    right: 10%;
+                    left: 10%;
+                    text-align: center;
+                    padding-bottom: 18%;
+                }
+                h1 {
+                    color: $white;
+                    font-size: 3em;
+                    letter-spacing: 0.02em;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 0.9em;
+                    color: $white;
+                    letter-spacing: 0.05em;
+                    margin-top: 1.5em;
+                }
+                .btn- {
+                    border: 3px solid $white;
+                    border-radius: 3px;
+                    color: $white;
+                    padding: 0.5em 1.5em;
+                    font-size: 1em;
+                    margin-top: 1.5em;
+                }
+                .btn-:hover {
+                    background-color: white;
+                    color: #000;
+                }
+            }
+            // Section 2
+            #hero-2 {
+                margin-top: 5em;
+                .img-hero2 img {
+                    width: 600px;
+                    height: auto;
+                }
+            }
+            .hero-2-content {
+                margin-top: 2em;
+                h3 {
+                    font-size: 2.2em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    span {
+                        color: $blue;
+                    }
+                }
+                p {
+                    margin-top: 2em;
+                    font-size: 0.9em;
+                    color: $secondary-text;
+                    letter-spacing: 0.05em;
+                }
+                .baca-selengkapnya {
+                    cursor: pointer;
+                    color: $blue;
+                    letter-spacing: 0.05em;
+                    text-decoration-line: underline;
+                    margin-top: 1.5em;
+                }
+                .baca-selengkapnya:hover {
+                    text-decoration: none;
+                }
+            }
+            // Section 3
+            .icon {
+                width: 3.5em;
+            }
+            .title {
+                text-align: center;
+                h3 {
+                    font-size: 2.2em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    span {
+                        color: $blue;
+                    }
+                }
+            }
+            .box-shadow {
+                border-radius: 5px;
+                background-color: $white;
+                border: 1px solid rgba(189, 169, 169, 0.1);
+                .text-content {
+                    h5 {
+                        font-weight: 600;
+                        letter-spacing: 0.02em;
+                    }
+                    p {
+                        color: $black;
+                        letter-spacing: 0.05em
+                    }
+                }
+            }
+            .box-shadow:hover {
+                box-shadow: 0px -8px 80px rgba(146, 141, 141, 0.13), 0px -1.7869px 17.869px rgba(146, 141, 141, 0.0774939), 0px -0.532008px 5.32008px rgba(146, 141, 141, 0.0525061);
+            }
+            .box-shadow-2 {
+                border-radius: 5px;
+                background-color: $white;
+                border: 1px solid rgba(189, 169, 169, 0.1);
+                .text-content {
+                    h5 {
+                        font-size: 1.2em;
+                        font-weight: 600;
+                        letter-spacing: 0.02em;
+                    }
+                    p {
+                        color: $black;
+                        letter-spacing: 0.05em;
+                        font-size: 1em;
+                    }
+                }
+            }
+            .box-shadow-2:hover {
+                box-shadow: 0px -8px 80px rgba(146, 141, 141, 0.13), 0px -1.7869px 17.869px rgba(146, 141, 141, 0.0774939), 0px -0.532008px 5.32008px rgba(146, 141, 141, 0.0525061);
+            }
+            // Section 4
+            .background-linear {
+                background: linear-gradient(180deg, #4C4BFF 46.79%, #F6F6FF 46.8%);
+                width: 100%;
+                min-height: 500px;
+            }
+            .card {
+                box-shadow: 0px 100px 80px rgba(107, 102, 102, 0.07), 0px 41.7776px 33.4221px rgba(107, 102, 102, 0.0503198), 0px 22.3363px 17.869px rgba(107, 102, 102, 0.0417275), 0px 12.5216px 10.0172px rgba(107, 102, 102, 0.035), 0px 6.6501px 5.32008px rgba(107, 102, 102, 0.0282725), 0px 2.76726px 2.21381px rgba(107, 102, 102, 0.0196802);
+                border-radius: 5px;
+            }
+            .card1 {
+                width: 177px;
+                height: 225px;
+            }
+            .gtco-testimonials {
+                position: relative;
+                margin-top: 30px;
+                h2 {
+                    font-size: 30px;
+                    text-align: center;
+                    color: #333333;
+                    margin-bottom: 50px;
+                }
+                .owl-stage-outer {
+                    padding: 30px 0;
+                }
+                .owl-nav {
+                    display: none;
+                }
+                .owl-dots {
+                    text-align: center;
+                    span {
+                        position: relative;
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 50%;
+                        display: block;
+                        background: #fff;
+                        border: 2px solid #01b0f8;
+                        margin: 0 5px;
+                    }
+                    .active {
+                        box-shadow: none;
+                        span {
+                            background: #01b0f8;
+                            box-shadow: none;
+                            height: 12px;
+                            width: 12px;
+                            margin-bottom: -1px;
+                        }
+                    }
+                }
+                .card {
+                    background: #fff;
+                    box-shadow: 0 8px 30px -7px #c9dff0;
+                    margin: 0 20px;
+                    padding: 0 10px;
+                    border-radius: 20px;
+                    border: 0;
+                    .card-img-top {
+                        max-width: 100px;
+                        border-radius: 50%;
+                        margin: 15px auto 0;
+                        box-shadow: 0 8px 20px -4px #95abbb;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    h5 {
+                        color: #01b0f8;
+                        font-size: 21px;
+                        line-height: 1.3;
+                        span {
+                            font-size: 18px;
+                            color: #666666;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        color: #555;
+                        padding-bottom: 15px;
+                    }
+                }
+                .active {
+                    opacity: 0.5;
+                    transition: all 0.3s;
+                }
+                .center {
+                    opacity: 1;
+                    h5 {
+                        font-size: 24px;
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+                    .card-img-top {
+                        max-width: 100%;
+                        height: 120px;
+                        width: 120px;
+                    }
+                }
+            }
+        }
+        
+        // X-Large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+            .logo {
+                width: 160px;
+                height: 120px;
+            }
+            .nav-item {
+                font-size: 1em;
+            }
+            // Carousel
+            .container {
+                position: relative;
+                .carousel-caption {
+                    position: absolute;
+                    right: 10%;
+                    left: 10%;
+                    text-align: center;
+                    padding-bottom: 15%;
+                }
+                h1 {
+                    color: $white;
+                    font-size: 3em;
+                    letter-spacing: 0.02em;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 0.9em;
+                    color: $white;
+                    letter-spacing: 0.05em;
+                    margin-top: 1.5em;
+                }
+                .btn- {
+                    border: 3px solid $white;
+                    border-radius: 3px;
+                    color: $white;
+                    padding: 0.5em 1.5em;
+                    font-size: 1em;
+                    margin-top: 1.5em;
+                }
+                .btn-:hover {
+                    background-color: white;
+                    color: #000;
+                }
+            }
+            // Section 2
+            #hero-2 {
+                margin-top: 5em;
+                .img-hero2 img {
+                    width: 600px;
+                    height: auto;
+                }
+            }
+            .hero-2-content {
+                margin-top: 2em;
+                h3 {
+                    font-size: 2.5em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    span {
+                        color: $blue;
+                    }
+                }
+                p {
+                    margin-top: 2em;
+                    font-size: 0.9em;
+                    color: $secondary-text;
+                    letter-spacing: 0.05em;
+                }
+                .baca-selengkapnya {
+                    cursor: pointer;
+                    color: $blue;
+                    letter-spacing: 0.05em;
+                    text-decoration-line: underline;
+                    margin-top: 1.5em;
+                }
+                .baca-selengkapnya:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        
+        // XX-Large devices (larger desktops, 1400px and up)
+        @media (min-width: 1400px) {
+            .logo {
+                width: 160px;
+                height: 120px;
+            }
+            .nav-item {
+                font-size: 1em;
+            }
+            // Carousel
+            .container {
+                position: relative;
+                .carousel-caption {
+                    position: absolute;
+                    right: 10%;
+                    left: 10%;
+                    text-align: center;
+                    padding-bottom: 18%;
+                }
+                h1 {
+                    color: $white;
+                    font-size: 3em;
+                    letter-spacing: 0.02em;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 0.9em;
+                    color: $white;
+                    letter-spacing: 0.05em;
+                    margin-top: 1.5em;
+                }
+                .btn- {
+                    border: 3px solid $white;
+                    border-radius: 3px;
+                    color: $white;
+                    padding: 0.5em 1.5em;
+                    font-size: 1em;
+                    margin-top: 1.5em;
+                }
+                .btn-:hover {
+                    background-color: white;
+                    color: #000;
+                }
+            }
+            // Section 2
+            #hero-2 {
+                margin-top: 5em;
+                .img-hero2 img {
+                    width: 600px;
+                    height: auto;
+                }
+            }
+            .hero-2-content {
+                margin-top: 2em;
+                h3 {
+                    font-size: 2.5em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    span {
+                        color: $blue;
+                    }
+                }
+                p {
+                    margin-top: 2em;
+                    font-size: 0.9em;
+                    color: $secondary-text;
+                    letter-spacing: 0.05em;
+                }
+                .baca-selengkapnya {
+                    cursor: pointer;
+                    color: $blue;
+                    letter-spacing: 0.05em;
+                    text-decoration-line: underline;
+                    margin-top: 1.5em;
+                }
+                .baca-selengkapnya:hover {
+                    text-decoration: none;
+                }
+            }
+        }
